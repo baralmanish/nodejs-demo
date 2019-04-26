@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Details of #{employee.employee_name}
+  
+  table.table
+    thead
+      tr
+        th ID
+        th Name
+        th Salary
+        th Age
+    
+    tbody
+        tr
+            td
+                = employee.id
+            td
+                = employee.employee_name
+            td
+                = employee.employee_salary
+            td
+                = employee.employee_age

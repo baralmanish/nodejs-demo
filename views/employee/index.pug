@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 List Employees
+  
+  table.table
+    thead
+      tr
+        th ID
+        th Name
+        th Salary
+        th Age
+    
+    tbody
+      for employee, index in employees
+        tr
+          td
+            = employee.id
+          td
+            = employee.employee_name
+          td
+            = employee.employee_salary
+          td
+            = employee.employee_age
+    
