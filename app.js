@@ -10,7 +10,8 @@ const apiRouter = require('./src/routes/api');
 
 let app = express();
 
-require('custom-env').env(true);
+// require('custom-env').env(true);
+const dotenv =  require('dotenv').config()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'src/views'));

@@ -1129,13 +1129,6 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
-custom-env@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/custom-env/-/custom-env-1.0.0.tgz#12effe2f247d4353feda2697f88640404be397c6"
-  integrity sha512-7qFN5KcW5BQh2DXjYaCKIW3r39sbv9LCPOfc3kANoh361tdpoQ2Q+twrA93w0zl6zYotq4btZDD2idU0570F2w==
-  dependencies:
-    dotenv "*"
-
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -1283,7 +1276,7 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@*:
+dotenv@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-7.0.0.tgz#a2be3cd52736673206e8a85fb5210eea29628e7c"
   integrity sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==
