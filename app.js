@@ -5,15 +5,15 @@ let morgan = require('morgan');
 let bodyParser = require('body-parser')
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
-const indexRouter = require('./routes/index');
-const apiRouter = require('./routes/api');
+const indexRouter = require('./src/routes/index');
+const apiRouter = require('./src/routes/api');
 
 let app = express();
 
 require('custom-env').env(true);
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
@@ -39,6 +39,12 @@ app.use((err, req, res, next) => {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+const APP_PORT = process.env.APP_PORT || 5000;
+
+var listener = app.listen(APP_PORT, function(){
+  console.log('Listening on port ' + listener.address().port); //Listening on port APP_PORT
 });
 
 

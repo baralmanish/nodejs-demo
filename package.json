@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/nodemon ./bin/www",
+    "start": "node app.js",
+    "dev": "./node_modules/.bin/nodemon app.js",
     "test": "jest"
   },
   "dependencies": {
