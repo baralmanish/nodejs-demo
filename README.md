@@ -1,23 +1,23 @@
 ## APP Url
-`http://localhost:3000/`
+`http://localhost:8000/`
 
 ## API URLS
 ### All Employees
 ```javascript
 // Request Method: GET
-http://localhost:3000/api/employees
+http://localhost:8000/api/employees
 ```
 
 ### Employee by ID
 ```
 // Request Method: GET
-http://localhost:3000/api/employee/id
+http://localhost:8000/api/employee/id
 ```
 
 ### Employee by ID
 ```
 // Request Method: POST
-http://localhost:3000/api/employee/create
+http://localhost:8000/api/employee/create
 ```
 
 ```json
@@ -46,6 +46,9 @@ http://localhost:3000/api/employee/create
 
 - Run APP
 `~ yarn start`
+
+- Run APP Development
+`~ yarn dev`
 
 - Test APP
 `~ yarn test`
