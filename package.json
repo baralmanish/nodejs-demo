@@ -2,6 +2,7 @@
   "name": "demo",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "start": "node app.js",
     "dev": "./node_modules/.bin/nodemon app.js",
